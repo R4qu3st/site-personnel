@@ -1,0 +1,859 @@
+@font-face {
+    font-family: 'quicksand';
+    src: url('fonts/quicksand_book-webfont.woff2') format('woff2'),
+        url('fonts/quicksand_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quicksandbold';
+    src: url('fonts/quicksand_bold-webfont.woff2') format('woff2'),
+        url('fonts/quicksand_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+header {
+    height: 100vh;
+    z-index: -1;
+	background: linear-gradient(-45deg, #01D758, #1FA055, #00561B, #18391E);
+    animation: gradient 15s ease infinite;
+    padding: 100px 0;
+
+    
+}
+
+header > div >div{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin: 50px 0;
+
+}
+
+header > div >div>h1{
+    border-bottom: 2px solid black;
+
+}
+
+header > div >div>div>h1{
+    border-bottom: 2px solid black;
+
+}
+
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+body {
+    background-color: #BABABA;
+}
+
+.headerTitle {
+    color: chartreuse;
+    letter-spacing: 1px;
+    
+}
+
+.headerTitle span {
+    font-family: 'quicksandbold';
+    font-size: 50px;
+}
+
+main{
+    color: chartreuse;
+
+}
+
+h2{
+    padding: 50px px;
+    
+}
+
+/*animation prenom effet clavier*/
+
+.typewriter {
+    position: center;
+    top: 35%;
+    left: 10%;
+}
+
+.typewriter h1 {
+    border-right: 1px solid chartreuse;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 480px;
+    animation: typewriter 3s steps(40) 1s 1 normal both;
+    color: chartreuse;    
+
+        
+
+
+
+}
+
+.typewriter #line-1 {
+    border-right: 1px solid chartreuse;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 480px;
+    animation: typewriter 4.5s steps(40) 1s 1 normal both;
+    animation-delay: 4.5s;
+    color: chartreuse;
+}
+
+#line-2 {
+    border-right: 1px solid chartreuse;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 260px;
+    animation: typewriter 4.5s steps(40) 1s 1 normal both;
+    animation-delay: 10s;
+    color: chartreuse;
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+    border-right: none;
+  }
+  0.1% {
+    border-right: 1px solid rgb(220,220,220);
+  }
+  99.9% {
+    border-right: 1px solid rgb(220,220,220);
+  }
+  100% {
+     border: none;
+  }
+}
+
+
+
+
+/*ANIMATION*/
+canvas{
+    width: 50vw;
+    height: 50hw;
+     z-index: -1;
+
+}
+
+
+#stars{
+ z-index: -1;
+
+}
+
+
+
+
+/*animation bouton*/
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: chartreuse;
+    border: none;
+    color: gainsboro;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 40%;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+/*barre de navigation*/
+
+ #grandenav {
+    z-index: 98;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #01D758;
+    box-shadow: 0px 0px 60px -10px rgba(0, 0, 0, 0.54);
+}
+
+#grandenav a {
+    font-size: 1.2em;
+    font-family: 'quicksand';
+    color: white;
+    text-decoration: none;
+    transition: 200ms;
+    border-radius: 5px;
+}
+
+
+
+#grandenav li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+/*little menu*/
+#menuToggle {
+    display: block;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+
+    z-index: 97;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+#menuToggle input {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 99;
+}
+
+
+#menu {
+    font-family: 'quicksand';
+    position: fixed;
+    top: 0;
+    width: 200px;
+    margin-left: -50px;
+    padding-left: 35px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    height: 100vh;
+    background-image: url(images/drapeauFrance.png);
+    background-position: center;
+    background-repeat: repeat;
+    list-style-type: none;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    font-size: 1.5em;
+    box-shadow: 0px 0px 61px -10px rgba(0, 0, 0, 0.75);
+}
+
+#menu li,
+#menu li a {
+    list-style-type: none;
+    color: #d9d9d9 !important;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+#menu li:hover > a {
+    color: white !important;
+}
+
+#menu li {
+    padding-bottom: 20px;
+}
+
+#menuToggle input:checked ~ ul {
+    transform: none;
+}
+
+main article .nav-p {
+    color: white !important;
+}
+
+#sommaire a {
+    color: white !important;
+}
+
+.ham {
+    z-index: 98;
+    cursor: pointer;
+    transition: transform 400ms;
+    user-select: none;
+    transition: 0.2s;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#menuToggle input:checked + .hamRotate {
+    transform: rotate(45deg);
+}
+
+#menuToggle input:checked + .hamRotate180 {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: black;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+    transition: 200ms;
+}
+
+.ham7 .top {
+    stroke-dasharray: 40 82;
+}
+
+.ham7 .middle {
+    stroke-dasharray: 40 111;
+}
+
+.ham7 .bottom {
+    stroke-dasharray: 40 161;
+}
+
+#menuToggle input:checked + .ham7 .top {
+    stroke-dasharray: 17 82;
+    stroke-dashoffset: -62px;
+    stroke: white;
+}
+
+#menuToggle input:checked + .ham7 .middle {
+    stroke-dashoffset: 23px;
+    stroke: white;
+}
+
+#menuToggle input:checked + .ham7 .bottom {
+    stroke-dashoffset: -83px;
+    stroke: white;
+}
+
+
+
+.logo{
+    z-index: 99;
+    display: block;
+    position: fixed;
+    top: 25;
+    right: 25;
+    
+
+}
+
+.english:hover{
+   background-image: url(images/drapeauAnglais.jpg);
+    background-size: cover;
+    background-position: center;  
+}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: black;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+/*Bouton trad*/
+
+
+
+/*competence*/
+
+
+.ball {
+    background: white;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    padding: 90px 5px;
+}
+
+@keyframes bounce { 
+  0% { transform: translateY(50px); }
+  100% { transform: translateY(-50px); }
+}
+.ball {
+  animation: bounce 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.ball:hover{
+    color: black;
+    border-bottom: 5px black;
+}
+
+.ball:nth-child(2){
+        animation-delay: 1s;
+}
+
+.ball:nth-child(3){
+        animation-delay: 2s;
+}
+
+.ball:nth-child(4){
+        animation-delay: 3s;
+}
+
+#competence {
+    background:#000000;
+    padding: 70px 30px 100px;
+    height: auto;
+}
+
+
+.btnC:hover {
+    color: chartreuse;
+    border-bottom: 3px solid chartreuse;
+}
+
+/*modal*/
+
+.modal-footer {
+    border: 0;
+}
+
+.modal-content {
+    font-family: 'quicksand';
+    background-color: white;
+    color: black;
+    width: 1000px;
+}
+
+
+/*A propos*/
+
+
+#aPropos{
+    padding: 90px 100px;
+    background-color: #EDEDED;
+    color: #3AF24B;
+}
+
+
+.rond {
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/*Projets*/
+
+#projet{
+    background-color: #777;
+    
+}
+
+.card {
+    border-color: #BABABA;
+    border-width: 2px;
+    text-align: center;
+    height: 20vw;
+    padding: 20px;
+}
+
+.card:hover {
+    border-color: #3AF24B;
+    border-width: 4px;
+}
+/*
+POUR LES CARTES QUI BOUGES
+
+.cards{
+    display: flex;
+    
+}
+
+.card{
+    background-color: #5A5E6B;
+    width: 100vh;
+    color: chartreuse;
+    border-radius: 1rem;
+    padding: 4rem;
+    box-shadow: 4px 4px 15px 2px #000;
+    transition: 0.3s;
+}
+
+.card:not(:first-child){
+     margin-left: -4rem;
+}
+
+
+.card:hover{
+    transform: translateY(-1rem);
+    background-color: #BABABA;
+    color: aquamarine;
+    border-width: 5px;
+    border-color: #3AF24B;
+}
+
+.card:hover ~ .card{
+   transform: translateX(4rem);
+}
+
+*/
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/*footer*/
+
+footer{
+    background-color: #0B1616;
+    color: #BABABA;
+    padding: 80px 0;
+    
+}
+
+footer div{
+    margin: 10px 0;
+}
+
+footer a{
+    color: #BABABA;
+    text-decoration: none;
+    margin: 0 5px;
+
+}
+
+footer a:hover{
+    color: #EDEDED;
+    text-decoration: none;
+
+}
+
+
+/*TEST*/
+
+
+
+
+
+
+
+#projets {
+    color: #BABABA;
+    height: auto;
+    padding: 100px 0;
+    
+}
+
+#projets > div > div {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    transition: 200ms;
+    border-color: #3AF24B;
+    border-width: 4px;
+}
+
+#projets > div {
+    height: 400px;
+    padding: 0;
+    cursor: pointer;
+    border-color: #3AF24B;
+    border-width: 4px;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+#projets > div:hover div {
+    opacity: 1;
+}
+
+
+
+#projets > div:nth-child(1) {
+    background-color: yellow;
+    
+}
+
+#projets > div:nth-child(1):hover {
+        background-color: darkgoldenrod;
+
+}
+
+
+#projets > div:nth-child(2) {
+    background-image: url(images/gameManager1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#projets > div:nth-child(2):hover {
+    background-image: url(images/gameManager2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#projets > div:nth-child(3) {
+    background-image: url(images/advercity1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#projets > div:nth-child(3):hover {
+    background-image: url(images/advercity2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#projets > div:nth-child(4) {
+    background-image: url(images/moonPath1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#projets > div:nth-child(4):hover {
+    background-image: url(images/moonPath2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#projets > div:nth-child(5) {
+    background-image: url(images/prothesia1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#projets > div:nth-child(5):hover {
+    background-image: url(images/prothesia2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#projets > div:nth-child(6) {
+    background-image: url(images/agritechno1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#projets > div:nth-child(6):hover {
+    background-image: url(images/agritechno2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #projets > div > div {
+        opacity: 1 !important;
+    }
+}
+
+/*counter bootstrap*/
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#scrolltop {
+    position: fixed;
+    width: 100px;
+    height: 130px;
+    right: 3%;
+    bottom: 5%;
+    transition: 100ms;
+    display: none;
+}
+
+#scrolltop img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+    transition: 200ms;
+}
+
+#scrolltop img:nth-child(2) {
+    z-index: 2;
+    opacity: 0;
+}
+
+#scrolltop a:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    #scrolltop {
+        display: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

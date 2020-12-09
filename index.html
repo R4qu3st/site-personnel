@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <!-- Elément meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Je suis Antoine Maurais, j'ai 19 ans et je suis  en 2eme année de DUT Informatique, découvrez moi" />
+    <meta name="keywords" content="antoine,maurais,informatique,cv,dut,iut,lannion,étudiant" lang="fr" />
+    <meta name="author" content="Antoine Maurais" />
+
+    <!-- Déclaration de Bootstrap / jQuery / JavaScript -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  
+
+    <!-- Utilisation de tout l'espace disponible pour les mobiles, sans zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+    <!-- Reste-->
+    <title>Site personnel Accueil</title>
+    <link rel="icon" href="images/logotamere.png" />
+
+    
+    
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <header>
+        
+        <div class="row justify-content-center">
+            <img src="images/logo_header.png">
+        </div>
+            
+        <div class="row justify-content-center">
+            <div class="hvr-grow">
+                <h1>Antoine Maurais - Developpeur</h1><br>
+                <div class="row justify-content-center">
+                    <h1>Décourvrez moi !</h1><br>
+                </div>
+            </div>        
+        </div>
+        
+        
+        
+       
+    
+    </header>
+    
+    
+
+    <main>
+         <!-- Barre de navigation-->
+    
+        <nav class="d-none navbar-expand d-md-flex justify-content-center" id="grandenav">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center" href="cv_fran%C3%A7ais.pdf">Mon cv</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center" href="#competence">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center" href="#apropos">A Propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="images/logotamere.png" alt="logo" title="logo" width="50" height="50">
+                    </a>
+                </li>
+                <li class="nav-item hvr-underline-from-center">
+                    <a class="nav-link" href="#projet">Projets</a>
+                </li>
+                <li class="nav-item hvr-underline-from-center">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="english">
+                    <a class="nav-link" href="#contact">English</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- menu burger-->
+
+        <nav class="d-md-none">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="50">
+                    <path class="line top" d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+                    <path class="line middle" d="m 70,50 h -40" />
+                    <path class="line bottom" d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+                </svg>
+                <ul id="menu">
+                    <li><a href="#competence">Compétences</a></li>
+                    <li><a href="#apropos">A Propos</a></li>
+                    <li><a href="projet">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="">English</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="logo d-none d-md-flex">
+            <img src="images/logoCV.png" alt="logoCV" title="logoCV" width="50" height="50">
+        </div>
+        
+        <!-- trad-->
+
+        
+         <!-- compétences-->
+        <section id="competence">
+            <div class="row align-items-center justify-content-center">
+                <h2>Compétences</h2>
+            </div>
+            
+            <div class="row align-items-center justify-content-center balls" >
+                
+                <div class="ball" data-toggle="modal" data-target="#systeme">
+                    <div class="row justify-content-center align-items-center">
+                        <h3 class="row justify-content-center col-12">Système</h3>
+                        <button type="button" class="btn btnC row justify-content-center">En savoir plus</button>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="ball" data-toggle="modal" data-target="#devweb">
+                    <div class="row justify-content-center align-items-center">
+                        <h3 class="row justify-content-center col-12">Developpement web</h3>
+                        <button type="button" class="btn btnC row justify-content-center">En savoir plus</button>
+                    </div>
+                </div>
+                
+                <div class="ball" data-toggle="modal" data-target="#bdd">
+                    <div class="row justify-content-center align-items-center">
+                        <h3 class="row justify-content-center col-12">Base de données</h3>
+                        <button type="button" class="btn btnC row justify-content-center">En savoir plus</button>
+                    </div>
+                </div>
+                
+                <div class="ball" data-toggle="modal" data-target="#prog">
+                    <div class="row justify-content-center align-items-center">
+                        <h3 class="row justify-content-center col-12">Programmation</h3>
+                        <button type="button" class="btn btnC row justify-content-center">En savoir plus</button>
+                    </div>
+                </div>
+                
+                
+
+            </div>
+        
+        </section>
+        
+        
+        
+        
+        
+         <!-- a propos-->
+        <div class="row align-items-center justify-content-center" id="aPropos">
+            <div class="col-md-5 row align-items-center justify-content-center">
+                <img src="images/photomoit.png" alt="linkedin" title="linkedin"  height="500" width="600" class="rond">
+            </div>
+            
+            <div class="row align-items-center justify-content-center col-md-7">
+                <div class="row align-items-center justify-content-center">
+                    <p>Etudiant en 2éme années de DUT Informatique à l'iut de Lannion , atteri un petit peu par hasart dans la formation de DUT informatique, l'informatique a été pour moi une révélation lors de ma première année de DUT.<br/>Je suis passionné par la cybersécurité, le développement web et la programmation, j'éspère intégré le cursus de cybersécurité de l'ENSIBS afin de devenir ingénieur en cybersécurité ou devenir ingénieur en développement web.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Formation :
+                                <ul>
+                                    <li>DUT Informatique (2019 - En cours)</li>
+                                        <ul>
+                                            <li><a href="https://iut-lannion.univ-rennes1.fr/">Institut Universitaire Technologique - Lannion</a></li>
+                                            <li>Spécialité donnée sensible</li>
+                                            <li>Développement de site web - manipulation de base de données - programmation</li>
+                                        </ul>
+                                    <li>Baccalauréat</li>
+                                        <ul>
+                                            <li><a href="https://www.lycee-sevigne-cesson.ac-rennes.fr/">Lycée Sevigné - Cesson Sevigne</a></li>
+                                            <li>Série Science et Vie de la Terre</li>
+                                        </ul>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <ul>
+                                <li>Loisir :
+                                    <ul>
+                                        <li>Football (11ans)</li>
+                                        <li>Overwatch</li>
+                                        <li>Echec</li>
+                                        <li>Cybersécurité - rootme</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <li>Langues :
+                                    <ul>
+                                        <li>Francais - langue maternelle</li>
+                                        <li>Anglais - B2 (Comprendre, Communiquer, Exprimer de façon claire et détaillée</li>
+                                        <li>Espagnol - B1 (Comprendre, Communiquer, Pouvoir faire des phrases simple) </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row align-items-center justify-content-center">Je suis quelq'un de dynamique, obstiné, autonome mais également de nature sympathique et joviale, je serais apporter de la bonne humeur. Sans que cela n'affecte le caractère sérieux, productif et rigoureux de mon travail.</div>
+                
+            </div>    
+            
+        </div>
+        
+        
+         <!-- projets-->   
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="row justify-content-center align-items-center" id="projets">
+            <div class="col-12 col-md-3">
+                <div class="row justify-content-center align-items-center">
+                    <div>
+                        <h3 class="col-12  row justify-content-center">Bizbee</h3>
+                        <div class="col-12 row justify-content-center">
+                            <span>Projet </span>
+                            <p>en cours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="row justify-content-center align-items-center">
+                    <div>
+                        <h3 class="col-12  row justify-content-center">Game Manager</h3>
+                        <div class="col-12 row justify-content-center">
+                            <span>Projet Front-End</span>
+                            <p>2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="row justify-content-center align-items-center">
+                    <div>
+                        <h3 class="col-12  row justify-content-center">Moon Path</h3>
+                        <div class="col-12 row justify-content-center">
+                            <span>Projet Front-End</span>
+                            <p>2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="row justify-content-center align-items-center">
+                    <div>
+                        <h3 class="col-12  row justify-content-center">Advercity</h3>
+                        <div class="col-12 row justify-content-center">
+                            <span>Projet Java, Java Fx</span>
+                            <p>2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="row justify-content-center align-items-center">
+                    <div>
+                        <h3 class="col-12  row justify-content-center">Prothesia</h3>
+                        <div class="col-12 row justify-content-center">
+                            <span>Projet Front-End</span>
+                            <p>2019-2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="row justify-content-center align-items-center">
+                    <div>
+                        <h3 class="col-12  row justify-content-center">Agritechno</h3>
+                        <div class="col-12 row justify-content-center">
+                            <span>Projet Front-End</span>
+                            <p>2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+         
+        
+        
+         <!-- contact-->
+        <footer>
+            <div class="row align-items-center justify-content-center">
+                <h3>Antoine Maurais</h3>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <a href="tel:+330647341076">0647341076</a>
+                <a href="mailto:antoine.mautais77@gmail.com">antoine.mautais77@gmail.com</a>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <a href="https://www.linkedin.com/in/antoine-maurais-00680b194/"><img src="images/logoLinkedin.png" alt="linkedin" title="linkedin" width="100" height="100"></a>
+                <a href="https://twitter.com/Antoine02834178"><img src="images/logoTwitter.png" alt="twitter" title="twitter" width="100" height="100"></a>
+            </div>
+        </footer>
+    </main>
+    
+    <!-- pop-up compétences-->
+    
+    <div id="systeme" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title">Systeme</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-around align-items-center">
+                        <div>
+                            
+                            <img src="images/bash.png" width="60" height="auto" alt="Bash" title="Bash">
+                        </div>
+                        <div>
+                            <img src="images/awk.png" width="60" height="auto" alt="Awk " title="Awk">
+                        </div>
+                        <div>
+                            <img src="images/sed.png" width="60" height="auto" alt="Sed" title="Sed">
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <a class="bouton" data-dismiss="modal"><img src="images/Untitled%20Diagram.png" width="50" height="50"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+    
+    <div id="devweb" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header justify-content-center ">
+                    <h4 class="modal-title">Developpement web</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-around align-items-center">
+                        <div>
+                            <img src="images/html.png" width="60" height="auto" alt="Html" title="Html">
+                        </div>
+                        <div>
+                            <img src="images/css.png" width="60" height="auto" alt="Css" title="Css">
+                        </div>
+                        <div>
+                            <img src="images/boostrap.png" width="60" height="auto" alt="Boostrap" title="Boostrap">
+                        </div>
+                        <div>
+                            <img src="images/php.png" width="60" height="auto" alt="php" title="php">
+                        </div>
+                    
+                    </div>
+                    
+                    <div>
+                        <div class="row justify-content-center">
+                            <h3>Mes projets !</h3>
+                        </div>
+                        <div class="row justify-content-around">
+                            <div>
+                                <span >Moon path</span>
+                            </div>
+                            <div>
+                                <span >Prothesia</span>
+                            </div>
+                            <div>
+                                <span >AgriTechno</span>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="bouton" data-dismiss="modal"><img src="images/Untitled%20Diagram.png" width="50" height="50"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    
+    <div id="prog" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title">Programmation</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-around align-items-center">
+                        <div>
+                            <img src="images/icons8-programmation-en-c-48.png" width="60" height="auto" alt="langage C" title="langage C">
+                        </div>
+                        <div>
+                            <img src="images/icons8-logo-java-coffee-cup-48.png" width="60" height="auto" alt="Java & JavaFX" title="Java & JavaFX">
+                        </div>
+                        <div>
+                            <img src="images/icons8-python-48.png" width="60" height="auto" alt="python" title="python">
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <a class="bouton" data-dismiss="modal"><img src="images/Untitled%20Diagram.png" width="50" height="50"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+    <div id="bdd" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title">Base de données</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-around align-items-center">
+                        <div>
+                            
+                            <img src="images/postgresql.png" width="60" height="auto" alt="PosgreSQL" title="PosgreSQL">
+                        </div>
+                        <div>
+                            <img src="images/Mysql.png" width="60" height="auto" alt="MySql" title="MySql">
+                        </div>
+                        <div>
+                            <span >Tutorial D</span>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="bouton" data-dismiss="modal"><img src="images/Untitled%20Diagram.png" width="50" height="50"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+    
+    <script>
+        // DOM selectors
+const stars = document.getElementById('stars');
+const starsCtx = stars.getContext('2d');
+const slider = document.querySelector(".slider input");
+const output = document.querySelector("#speed");
+
+// global variables
+let screen, starsElements, starsParams = { speed: 10, number: 300, extinction: 4 };
+
+// run stars
+setupStars();
+updateStars();
+
+// handle slider
+output.innerHTML = slider.value;
+slider.oninput = function() {
+    output.innerHTML = this.value;
+    starsParams.speed = this.value;
+};
+
+// update stars on resize to keep them centered
+window.onresize = function() {
+    setupStars();
+};
+
+// star constructor
+function Star() {
+    this.x = Math.random() * stars.width;
+    this.y = Math.random() * stars.height;
+    this.z = Math.random() * stars.width;
+
+    this.move = function() {
+        this.z -= starsParams.speed;
+        if (this.z <= 0) {
+            this.z = stars.width;
+        }
+    };
+
+    this.show = function() {
+        let x, y, rad, opacity;
+        x = (this.x - screen.c[0]) * (stars.width / this.z);
+        x = x + screen.c[0];
+        y = (this.y - screen.c[1]) * (stars.width / this.z);
+        y = y + screen.c[1];
+        rad = stars.width / this.z;
+        opacity = (rad > starsParams.extinction) ? 1.5 * (2 - rad / starsParams.extinction) : 1;
+
+        starsCtx.beginPath();
+        starsCtx.fillStyle = "rgba(255, 255, 255, " + opacity + ")";
+        starsCtx.arc(x, y, rad, 0, Math.PI * 2);
+        starsCtx.fill();
+    }
+}
+
+// setup <canvas>, create all the starts
+function setupStars() {
+    screen = {
+        w: window.innerWidth,
+        h: window.innerHeight,
+        c: [ window.innerWidth * 0.5, window.innerHeight * 0.5 ]
+    };
+    window.cancelAnimationFrame(updateStars);
+    stars.width = screen.w;
+    stars.height = screen.h;
+    starsElements = [];
+    for (let i = 0; i < starsParams.number; i++) {
+        starsElements[i] = new Star();
+    }
+}
+
+// redraw the frame
+function updateStars() {
+    starsCtx.fillStyle = "black";
+    starsCtx.fillRect(0, 0, stars.width, stars.height);
+    starsElements.forEach(function (s) {
+        s.show();
+        s.move();
+    });
+    window.requestAnimationFrame(updateStars);
+}
+
+    </script>  
+</body>
