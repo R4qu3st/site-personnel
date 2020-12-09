@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <!-- Elément meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Ici, vous pourrez trouver toutes les informations sur les prothèses actuelles ainsi que les nouvelles prothèses ou prothèses du futur." />
+    <meta name="keywords" content="prothesia, prothèse, bionique, futur, science, web, feedback sensoriel" lang="fr" />
+    <meta name="author" content="Ewen Raoult, Florian Bertholino, Fagnet Hugo, Maurais Antoine" />
+
+    <!-- Déclaration de Bootstrap / jQuery / JavaScript -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <script src="bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Lien de la feuille css pour les animations d'apparition à l'écran -->
+
+    <link href="aos/aos.css" rel="stylesheet">
+
+    <!-- Utilisation de tout l'espace disponible pour les mobiles, sans zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+    <!-- Reste-->
+    <title>Prothesia - Accueil</title>
+    <link rel="icon" href="favicon.ico" />
+
+</head>
+
+<body>
+
+    <!-- Header de l'accueil -->
+
+    <header class="d-none d-md-block">
+
+        <div id="accueil" class="d-flex justify-content-center align-items-center flex-column">
+            <object data="images/logo.svg" type="image/svg+xml">
+                <img src="images/logo.png" alt="logo" title="logo" />
+            </object>
+            <div class="container">
+                <span class="text1">Prothesia</span>
+                <span class="text2">
+                    Le wiki des prothèses
+                </span>
+            </div>
+            <div id="savoirplus">
+                <button class="bttn-unite" onclick="location.href='#main'">En savoir plus</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Grande navigation -->
+
+    <nav class="d-none navbar-expand d-md-flex justify-content-around" id="grandenav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#main"><img class="navimg lienimg" src="images/home.png" alt="home" title="home" width="50" height="50"><br />
+                    <p class="nav-p">Accueil</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link" href="histoire.html"><img class="navimg lienimg" src="images/travel.png" alt="carte" title="carte" width="50" height="50"><br />
+                    <p class="nav-p">Histoire</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><img class="navimg lienimg" src="images/logo.png" alt="logo" title="logo" width="100" height="100">
+                </a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <img class="navimg lienimg" src="images/e-derma.png" alt="prothèses" title="prothèses" width="50" height="50"><br />
+                    <p class="nav-p">Prothèses</p>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="pro-actuelle.html">
+                        <p class="nav-p">Prothèses actuelles</p>
+                    </a>
+                    <a class="dropdown-item" href="nouvelle-pro.html">
+                        <p class="nav-p">Nouvelles prothèses</p>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"><img class="navimg lienimg" src="images/contact.png" alt="contact" title="contact" width="50" height="50"><br />
+                    <p class="nav-p">Contact</p>
+                </a></li>
+        </ul>
+    </nav>
+
+    <!-- Petit menu de navigation -->
+
+    <nav class="d-md-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="50">
+                <path class="line top" d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+                <path class="line middle" d="m 70,50 h -40" />
+                <path class="line bottom" d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+            </svg>
+            <ul id="menu">
+                <li><a href="#main">Accueil</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="pro-actuelle.html">Prothèses actuelles</a></li>
+                <li><a href="nouvelle-pro.html">Nouvelles prothèses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <main id="main">
+
+        <!-- Section derniers articles -->
+
+        <section data-aos="fade-right" class="flex-column align-items-center justify-content-center">
+            <h1>Derniers articles</h1>
+            <div class="row">
+                <div class="row col-6 align-items-center justify-content-center">
+                    <span class="valeur">Vous retrouverez ici les derniers articles concernant les prothèses.</span>
+                </div>
+
+                <aside class="col-md-6 col-sm-7">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="Pompier.html" class="img"><img src="images/carIndx1.jpg" class="d-block w-100" alt="L'histoire d'un pompier" title="L'histoire d'un pompier"></a>
+                                <div class="carousel-caption">
+                                    <h5>Un pompier nous parle de sa prothèse</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="PremierTest.html" class="img"><img src="images/carIndx2.jpg" class="d-block w-100" alt="Main artificelle avec le sens du toucher" title="Main artificelle avec le sens du toucher"></a>
+                                <div class="carousel-caption">
+                                    <h5>Une main artificielle avec le sens du toucher</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="Noelle.html" class="img"><img src="images/carIndx3.jpg" class="d-block w-100" alt="Prothèse de Noëlle" title="Prothèse de Noëlle"></a>
+                                <div class="carousel-caption">
+                                    <h5>Noëlle : sa prothèse a tout changé</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev img" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Précédent</span>
+                        </a>
+                        <a class="carousel-control-next img" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Suivant</span>
+                        </a>
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+
+        <!-- Section histoire, prothèses actuelles et nouvelles-->
+
+        <section id="histoire">
+            <div data-aos="fade-up">
+                <h1>Histoire des prothèses</h1>
+                <span class="valeur">Les prothèses, bien qu'étant présentes depuis l'Antiquité chez les humains, se sont développées tardivement dans l'Histoire de l'humanité. Voici quelques points clés de leur histoire :</span>
+            </div>
+            <div class="row justify-content-center" data-aos="fade-up">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/1.png" alt="Card image cap">
+                    <div class="card-body d-flex flex-column justify-content-between align-items-center">
+                        <h5 class="card-title">Plus ancienne prothèse retrouvée</h5>
+                        <p class="card-text">Elle date d'il y a environ 3000 ans et a été retrouvée en Egypte Antique.</p>
+                        <a href="histoire.html" class="bttn-unite">Dis-m'en plus</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/2.png" alt="Card image cap">
+                    <div class="card-body d-flex flex-column justify-content-between align-items-center">
+                        <h5 class="card-title">Première prothèse de hanche</h5>
+                        <p class="card-text">Une prothèse qui imite l'articulation de la hanche.<br /> Elle date de 1922 et marque le début du premier essor des prothèses.</p>
+                        <a href="histoire.html" class="bttn-unite">Dis-m'en plus</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/3.png" alt="Card image cap">
+                    <div class="card-body d-flex flex-column justify-content-between align-items-center">
+                        <h5 class="card-title">Première prothèse de genoux</h5>
+                        <p class="card-text">Première prothèse de genoux articulée datant d'environ 1980.<br /> Elle témoigne des progrès scientifiques réalisés au 20<sup>ème</sup> siècle.</p>
+                        <a href="histoire.html" class="bttn-unite">Dis-m'en plus</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/4.png" alt="Card image cap">
+                    <div class="card-body d-flex flex-column justify-content-between align-items-center">
+                        <h5 class="card-title">Première prothèse bionique</h5>
+                        <p class="card-text">Grâce à des électrodes, le porteur du bras peut désormais bouger son bras par la pensée.<br /> Ce bras, créé en 2005, marque le début du second essor des prothèses grâce à l'informatique et les avancées en chimie des matériaux.</p>
+                        <a class="bttn-unite" href="histoire.html">Dis-m'en plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <span class="valeur">Cette histoire amène aujourd'hui à un type de prothèses, et une recherche active dans le domaine :</span>
+            </div>
+            <div id="sectionprot" class="row">
+
+                <article id="protact" class="col-6" data-aos="fade-down">
+                    <div class="row justify-content-center align-items-center">
+                        <h3>Prothèses actuelles</h3>
+                        <a href="pro-actuelle.html" class="bttn-unite d-md-none">En savoir plus</a>
+                    </div>
+                    <div id="actcache" class="d-none d-md-flex flex-column align-items-center justify-content-center">
+                        <p>Les prothèses actuelles sont capables de comprendre des informations envoyées par le cerveau et de les transcrire en mouvements.</p>
+                        <a href="pro-actuelle.html" class="bttn-unite">En savoir plus</a>
+                    </div>
+                </article>
+                <article id="nvprot" class="col-6" data-aos="fade-up">
+                    <div class="row justify-content-center align-items-center">
+                        <h3>Nouvelles prothèses</h3>
+                        <a href="nouvelle-pro.html" class="bttn-unite d-md-none">En savoir plus</a>
+                    </div>
+                    <div id="nvcache" class="d-none d-md-flex flex-column align-items-center justify-content-center">
+                        <p>Les nouvelles prothèses ont pour but de régler certains problèmes posés par les prothèses actuelles, comme le <a class="nav-p lienmain" href="feedback.html">feedback sensoriel.</a></p>
+                        <a href="nouvelle-pro.html" class="bttn-unite">En savoir plus</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Bouton pour revenir en haut de la page -->
+
+        <button onclick="topFunction()" id="scrollbackbtn" title="Revenir en haut de la page">
+            <img width="50" height="63" src="images/logopointe.png" alt="Retour en haut de la page" title="logo pointant vers le haut de la page">
+        </button>
+        <script src="scrolltop.js"></script>
+
+
+
+    </main>
+
+
+    <footer>
+        <div class="row justify-content-center align-items-center">
+
+            <!-- Partie de gauche -->
+
+            <div class="col-6">
+                <div class="row justify-content-around">
+                    <a href="contact.html">
+                        <img class="lienimg" src="images/contact.png" width="50" height="50" alt="contact" title="contact">
+                        <p>Contactez-nous</p>
+                    </a>
+                    <a href="contact.html">
+                        <img class="lienimg" src="images/question.png" width="50" height="50" alt="FAQ" title="FAQ">
+                        <p>F.A.Q</p>
+                    </a>
+                </div>
+                <br />
+                <a href="mentionslegales.html">
+                    <p>IUT Lannion 2019-2020 - Mentions légales</p>
+                </a>
+            </div>
+
+            <!-- Partie de droite -->
+
+            <div class="col-6">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Abonnez-vous à notre newsletter" aria-label="champ newsletter">
+                    <div class="input-group-append">
+                        <a href="#" class="bttn-unite">S'abonner</a>
+                    </div>
+                </div>
+                <div class="row justify-content-around">
+                    <a href="#" class="img" id="facebook"><img class="rotation" src="images/facebook.png" width="100" height="100" alt="notre facebook" title="notre facebook"></a>
+                    <a href="#" class="img" id="twitter"><img class="rotation" src="images/twitter.png" width="100" height="100" alt="notre twitter" title="notre twitter"></a>
+                    <a href="#" class="img" id="instagram"><img class="rotation" src="images/instagram.png" width="100" height="100" alt="notre instagram" title="notre instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Pour les animations d'apparition à l'écran-->
+
+    <script src="aos/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+
+</body>
+
+</html>

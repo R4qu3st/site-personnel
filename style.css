@@ -100,6 +100,14 @@ h2{
     
 }
 
+a{
+    color: #095228;
+}
+
+a:hover{
+    color: #095228;
+    text-decoration: none;
+}
 /*animation prenom effet clavier*/
 
 .typewriter {
@@ -511,7 +519,7 @@ main article .nav-p {
 /*A propos*/
 
 
-#aPropos{
+#apropos{
     padding: 90px 100px;
     background-color: #EDEDED;
     color: #3AF24B;
@@ -526,7 +534,9 @@ main article .nav-p {
     width: 50%;
 }
 
-
+.photo{
+    background-color: black;
+}
 /*Projets*/
 
 #projet{
@@ -678,14 +688,14 @@ footer a:hover{
 
 
 
-#projets {
+#projet {
     color: #BABABA;
     height: auto;
     padding: 100px 0;
     
 }
 
-#projets > div > div {
+#projet > div > div {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -695,7 +705,7 @@ footer a:hover{
     border-width: 4px;
 }
 
-#projets > div {
+#projet > div {
     height: 400px;
     padding: 0;
     cursor: pointer;
@@ -708,85 +718,101 @@ footer a:hover{
 
 
 
-#projets > div:hover div {
+#projet > div:hover div {
     opacity: 1;
 }
 
 
 
-#projets > div:nth-child(1) {
+#projet > div:nth-child(1) {
     background-color: yellow;
     
 }
 
-#projets > div:nth-child(1):hover {
+#projet > div:nth-child(1):hover {
         background-color: darkgoldenrod;
 
 }
 
 
-#projets > div:nth-child(2) {
+#projet > div:nth-child(2) {
     background-image: url(images/gameManager1.png);
     background-size: cover;
     background-position: center;
 }
 
-#projets > div:nth-child(2):hover {
+#projet > div:nth-child(2):hover {
     background-image: url(images/gameManager2.png);
     background-size: cover;
     background-position: center;
 }
 
 
-#projets > div:nth-child(3) {
+#projet > div:nth-child(4) {
     background-image: url(images/advercity1.png);
     background-size: cover;
     background-position: center;
 }
 
-#projets > div:nth-child(3):hover {
+#projet > div:nth-child(4):hover {
     background-image: url(images/advercity2.png);
     background-size: cover;
     background-position: center;
 }
 
-#projets > div:nth-child(4) {
+#projet > div:nth-child(3) {
     background-image: url(images/moonPath1.png);
     background-size: cover;
     background-position: center;
 }
 
-#projets > div:nth-child(4):hover {
+#projet > div:nth-child(3):hover {
     background-image: url(images/moonPath2.png);
     background-size: cover;
     background-position: center;
 }
 
-#projets > div:nth-child(5) {
+#projet > div:nth-child(5) {
     background-image: url(images/prothesia1.png);
     background-size: cover;
     background-position: center;
 }
 
-#projets > div:nth-child(5):hover {
+#projet > div:nth-child(5):hover {
     background-image: url(images/prothesia2.png);
     background-size: cover;
     background-position: center;
 }
 
-#projets > div:nth-child(6) {
+#projet > div:nth-child(6) {
     background-image: url(images/agritechno1.png);
     background-size: cover;
     background-position: center;
 }
 
-#projets > div:nth-child(6):hover {
+#projet > div:nth-child(6):hover {
     background-image: url(images/agritechno2.png);
     background-size: cover;
     background-position: center;
 }
 
+.boutonProjet{
+    background-color: white;
+    color: green;
+    border: green 2px solid;
+    border-radius: 5px;
+    padding: 3px;
+}
 
+.boutonProjet:hover{
+    background-color: green;
+    color: white;
+   
+}
+
+a:hover{
+    border-bottom: none;
+}
 
 @media screen and (max-width: 768px) {
     #projets > div > div {

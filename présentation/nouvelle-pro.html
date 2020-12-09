@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <!-- Elément meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Ici, vous pourrez trouver toutes les informations sur les prothèses actuelles ainsi que les nouvelles prothèses ou prothèses du futur." />
+    <meta name="keywords" content="prothesia, prothèse, bionique, futur, science, web, feedback sensoriel" lang="fr" />
+    <meta name="author" content="Ewen Raoult, Florian Bertholino, Fagnet Hugo, Maurais Antoine" />
+
+    <!-- Déclaration de Bootstrap / jQuery / JavaScript -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <script src="bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Lien de la feuille css pour les animations d'apparition à l'écran -->
+    <link href="aos/aos.css" rel="stylesheet">
+
+    <!-- Utilisation de tout l'espace disponible pour les mobiles, sans zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+    <!-- Reste-->
+    <title>Prothesia - Nouvelles prothèses</title>
+    <link rel="icon" href="favicon.ico" />
+
+</head>
+
+<body>
+
+    <!-- Navigation grand écran -->
+
+    <nav class="d-none navbar-expand d-md-flex justify-content-around" id="grandenav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html"><img class="navimg lienimg" src="images/home.png" width="50" height="50" alt="Home" title="Home"><br />
+                    <p class="nav-p">Accueil</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link" href="histoire.html"><img class="navimg lienimg" src="images/travel.png" width="50" height="50" alt="Carte" title="Carte"><br />
+                    <p class="nav-p">Histoire</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html"><img class="navimg lienimg" src="images/logo.png" width="100" height="100" alt="Logo" title="Logo">
+                </a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <img class="navimg lienimg" src="images/e-derma.png" width="50" height="50" alt="Prothèses" title="Prothèses"><br />
+                    <p class="nav-p">Prothèses</p>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="pro-actuelle.html">
+                        <p class="nav-p">Prothèses actuelles</p>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <p class="nav-p">Nouvelles prothèses</p>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"><img class="navimg lienimg" src="images/contact.png" width="50" height="50" alt="Contact" title="Contact"><br />
+                    <p class="nav-p">Contact</p>
+                </a></li>
+        </ul>
+    </nav>
+
+    <!-- Navigation petit écran -->
+
+    <nav class="d-md-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="50">
+                <path class="line top" d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+                <path class="line middle" d="m 70,50 h -40" />
+                <path class="line bottom" d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+            </svg>
+            <ul id="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="pro-actuelle.html">Prothèses actuelles</a></li>
+                <li><a href="#">Nouvelles prothèses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container-fluid">
+
+            <!-- Titre + texte en dessous -->
+            <article class="titre degrade" data-aos="flip-up" data-aos-duration="1000">
+                <div class="row justify-content-center">
+
+                    <h1>Les nouvelles prothèses, qu’est ce que c’est ?</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <p>Ce sont les prothèses du futur qui sont capable de vous redonner le sens du toucher !</p>
+                </div>
+
+            </article>
+
+
+            <!-- 1er paragraphe -->
+            <div class="row" data-aos="fade-up">
+
+                <!-- Article col 7 -->
+
+                <article class="col-md-7 col-12 hvr-underline-from-left hvr-forward bordureLeft">
+                    <div class="row justify-content-center">
+                        <h2>D'où vient cette idée ?</h2>
+                    </div>
+                    <div class="row">
+                        <p>
+                            Les nouvelles prothèses, dites prothèses bioniques sont néées dans le cadre d’un projet européen DeTOP qui est un projet supporté par la commission européenne au sein d’un programme qui se nomme horizon 2020. Ce programme vise à financer les projets pour la recherche et l'innovation. Un centre suisse (Le CSEM : centre suisse d’électronique et de microtechnique) et une dizaine d’autres partenaires ont réussis à concevoir un circuit intégré qui va permettre l’arrivée de nouvelles prothèses.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Image col 5 -->
+
+                <div class="d-none d-md-flex col-5 justify-content-center">
+                    <img src="images/pro1.png" height="266" width="202" alt="image prothèse 1" title="image prothèse 1" />
+                </div>
+
+
+
+            </div>
+
+            <!-- 2eme paragraphe -->
+            <div class="row" data-aos="fade-in">
+
+                <!-- Image col 6 -->
+
+                <div class="d-none d-md-flex col-5 justify-content-center">
+                    <img src="images/pro2.png" height="250" width="250" alt="image prothèse 2" title="image prothèse 2" />
+                </div>
+
+                <!-- Article col 6 -->
+
+                <article class="col-md-7 col-12 hvr-underline-from-right hvr-backward bordureRight">
+                    <div class="row justify-content-center">
+                        <h2>Comment ça marche ?</h2>
+                    </div>
+                    <div class="row">
+                        <p>C’est à partir d’un circuit intégré qui permet de contrôler une main artificielle et de collecter le <a href="feedback.html" class="lien lienmain">feed-back sensoriel</a> à partir d'électrodes implantées et stimulées dans les muscles du moignon. Cette innovation est la première du genre à être parfaitement adaptée à la vie quotidienne car elle permet de contrôler la prothèse et aussi ressentir parfaitement le sens du toucher. Annoncée en février dernier, une première implantation concluante a été réalisée sur une patiente suédoise amputée d'une main. Elle ouvre la voie à d’autres interventions du même type.</p>
+                    </div>
+                </article>
+
+
+
+
+            </div>
+
+
+            <!-- 3eme paragraphe-->
+            <div class="row" data-aos="fade-down">
+
+                <!-- Article col-7 -->
+
+                <article class="col-md-7 col-12 hvr-underline-from-left hvr-forward bordureLeft">
+                    <div class="row justify-content-center">
+                        <h2>Quelles limites ?</h2>
+                    </div>
+                    <div class="row">
+                        <p>D’abord, leur prix pose problème, elles sont extrêmement chers ! De fait qu’elles soient nouvelles, elles ne sont pas encore commercialisés, ce qui rend le peu de ces prothèses disponibles si coûteuses. Ensuite, elles ne sont pas (encore) adaptées à des conditions “extrêmes”, à cause du matériel technologique dont elle a besoin, par exemple des basses ou trop hautes températures les endommageraient. De plus, elles sont dépendantes des nouvelles technologie médicales. Enfin, Il faut un long temps d’apprentissage, de réactivation des muscles.</p>
+                    </div>
+                </article>
+
+                <!-- image col-5 -->
+
+                <div class="d-none d-md-flex col-5 justify-content-center">
+                    <img src="images/pro3.png" height="202" width="250" alt="image prothèse 3" title="image prothèse 3" />
+                </div>
+
+
+
+            </div>
+            <!-- 4eme -->
+            <div class="row">
+
+                <!-- Titre + article-->
+                <div class="col">
+
+                    <!-- Titre -->
+                    <div class="row justify-content-center" data-aos="fade-up">
+                        <h2>Quelques exemples concrets !</h2>
+                    </div>
+                    <div class="row justify-content-center" data-aos="fade-up">
+                        <p>Découvrez quelques articles ci-dessous</p>
+                    </div>
+
+                    <!-- Articles -->
+                    <div class="row justify-content-around">
+
+                        <div data-aos="fade-up">
+                            <div class="card" style="width: 20rem;">
+                                <img class="card-img-top" src="images/femme3.jpg" alt="image du premier test" title="Premier test">
+                                <div class="card-body">
+                                    <h5 class="card-title">Le premier test d'une main artificielle avec le sens du toucher</h5>
+                                    <p class="card-text">Le premier membre artificiel doté d'un système sensoriel a été testé avec succès. Ce prototype marque les premiers pas vers une main bionique complète.</p>
+                                    <a href="PremierTest.html" class=" bttn-unite d-flex justify-content-center btn-secondary">Voir article</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-up" data-aos-delay="50">
+                            <div class="card justify-content-between" style="width: 20rem;">
+                                <img class="card-img-top" src="images/premiereImp.jpg" alt="image de la première implantation" title="Première implantation">
+                                <div class="card-body">
+                                    <h5 class="card-title">5 ans plus tard une implantation réussie !</h5>
+                                    <p class="card-text">Découvrez l'histoire d'une suédoise qui, dans le cadre d'un projet européen, a hérité de la première implantation réussie d'une main avec le sens du toucher...</p>
+                                    <a href="PremierImp.html" class=" bttn-unite d-flex justify-content-center btn-secondary">Voir article</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Titre + lien vers autre page -->
+                <div class="col">
+
+                    <!-- Titre -->
+                    <div class="row  justify-content-center" data-aos="fade-up">
+                        <h2>Les prothèses actuelles c'est par ici !</h2>
+                    </div>
+                    <div class="row justify-content-center" data-aos="fade-up">
+                        <p>Découvrez ici le fonctionnement des prothèses actuelles...</p>
+                    </div>
+                    <!-- Articles -->
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <div class="row justify-content-center">
+                            <div class="card" style="width: 20rem;">
+                                <img class="card-img-top" src="images/protact.jpg" alt="image prothèse actuelle" title="Prothèse actuelle">
+                                <div class="card-body">
+                                    <h5 class="card-title">Page sur les prothèses actuelles</h5>
+                                    <p class="card-text">Venez découvrir notre autre page sur les prothèses actuelles cette fois-ci, elle retrace l'idée de ces prothèses ainsi que leur fonctionnement...</p>
+                                    <a href="pro-actuelle.html" class=" bttn-unite d-flex justify-content-center btn-secondary">Voir article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- Fin 4eme pâragraphe -->
+
+        </div>
+
+        <!-- Bouton pour revenir en haut de la page -->
+
+        <button onclick="topFunction()" id="scrollbackbtn" title="Revenir en haut de la page">
+            <img width="50" height="63" src="images/logopointe.png" alt="Retour en haut de la page" title="logo pointant vers le haut de la page">
+        </button>
+        <script src="scrolltop.js"></script>
+
+    </main>
+
+    <footer>
+        <div class="row justify-content-center align-items-center">
+
+            <!-- Partie de gauche -->
+
+            <div class="col-6">
+                <div class="row justify-content-around">
+                    <a href="contact.html">
+                        <img class="lienimg" src="images/contact.png" width="50" height="50" alt="contact" title="contact">
+                        <p>Contactez-nous</p>
+                    </a>
+                    <a href="contact.html">
+                        <img class="lienimg" src="images/question.png" width="50" height="50" alt="FAQ" title="FAQ">
+                        <p>F.A.Q</p>
+                    </a>
+                </div>
+                <br />
+                <a href="mentionslegales.html">
+                    <p>IUT Lannion 2019-2020 - Mentions légales</p>
+                </a>
+            </div>
+
+            <!-- Partie de droite -->
+
+            <div class="col-6">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Abonnez-vous à notre newsletter" aria-label="champ newsletter">
+                    <div class="input-group-append">
+                        <a href="#" class="bttn-unite">S'abonner</a>
+                    </div>
+                </div>
+                <div class="row justify-content-around">
+                    <a href="#" class="img" id="facebook"><img class="rotation" src="images/facebook.png" width="100" height="100" alt="notre facebook" title="notre facebook"></a>
+                    <a href="#" class="img" id="twitter"><img class="rotation" src="images/twitter.png" width="100" height="100" alt="notre twitter" title="notre twitter"></a>
+                    <a href="#" class="img" id="instagram"><img class="rotation" src="images/instagram.png" width="100" height="100" alt="notre instagram" title="notre instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Pour les animations d'apparition à l'écran-->
+
+    <script src="aos/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+
+</body>
+
+</html>

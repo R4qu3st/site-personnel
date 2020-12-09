@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <!-- Elément meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Ici, vous pourrez trouver toutes les informations sur les prothèses actuelles ainsi que les nouvelles prothèses ou prothèses du futur." />
+    <meta name="keywords" content="prothesia, prothèse, bionique, futur, science, web, feedback sensoriel" lang="fr" />
+    <meta name="author" content="Ewen Raoult, Florian Bertholino, Fagnet Hugo, Maurais Antoine" />
+
+    <!-- Déclaration de Bootstrap / jQuery / JavaScript -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <script src="bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Lien de la feuille css pour les animations d'apparition à l'écran -->
+    <link href="aos/aos.css" rel="stylesheet">
+
+    <!-- Utilisation de tout l'espace disponible pour les mobiles, sans zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+    <!-- Reste-->
+    <title>Prothesia - Prothèses actuelles</title>
+    <link rel="icon" href="favicon.ico" />
+
+</head>
+
+<body>
+
+    <!-- Navigation grand écran -->
+
+    <nav class="d-none navbar-expand d-md-flex justify-content-around" id="grandenav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html"><img class="navimg lienimg" src="images/home.png" width="50" height="50" alt="Home" title="Home"><br />
+                    <p class="nav-p">Accueil</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link" href="histoire.html"><img class="navimg lienimg" src="images/travel.png" width="50" height="50" alt="Carte" title="Carte"><br />
+                    <p class="nav-p">Histoire</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html"><img class="navimg lienimg" src="images/logo.png" width="100" height="100" alt="Logo" title="Logo">
+                </a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <img class="navimg lienimg" src="images/e-derma.png" width="50" height="50" alt="Prothèses" title="Prothèses"><br />
+                    <p class="nav-p">Prothèses</p>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">
+                        <p class="nav-p">Prothèses actuelles</p>
+                    </a>
+                    <a class="dropdown-item" href="nouvelle-pro.html">
+                        <p class="nav-p">Nouvelles prothèses</p>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"><img class="navimg lienimg" src="images/contact.png" width="50" height="50" alt="Contact" title="Contact"><br />
+                    <p class="nav-p">Contact</p>
+                </a></li>
+        </ul>
+    </nav>
+
+    <!-- Navigation petit écran -->
+
+    <nav class="d-md-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="50">
+                <path class="line top" d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+                <path class="line middle" d="m 70,50 h -40" />
+                <path class="line bottom" d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+            </svg>
+            <ul id="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="#">Prothèses actuelles</a></li>
+                <li><a href="nouvelle-pro.html">Nouvelles prothèses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="">
+        <div class="container-fluid">
+
+            <!-- Titre + texte en dessous -->
+            <article class="titre degrade" data-aos="flip-up" data-aos-duration="1000">
+                <div class="row justify-content-center">
+
+                    <h1>Les prothèses actuelles et leurs limites !</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <p>Ce sont les prothèses de tous les jours, celle que vous connaissez surement déjà !</p>
+                </div>
+
+            </article>
+
+
+            <!-- 1er paragraphe -->
+            <div class="row" data-aos="fade-up">
+
+                <!-- Image col 5 -->
+
+                <div class="d-none d-md-flex col-5 justify-content-center">
+                    <img src="images/pro1.png" height="266" width="202" alt="image prothèse 1" title="image prothèse 1" />
+                </div>
+
+                <!-- Article col 7 -->
+
+                <article class="col-md-7 col-12 hvr-underline-from-right hvr-backward bordureRight">
+                    <div class="row justify-content-center">
+                        <h2>D'où vient cette idée ?</h2>
+                    </div>
+                    <div class="row">
+                        <p>Les prothèses ne datent pas d’aujourd’hui <a href="histoire.html" class="lien lienmain">(voir article)</a>, elles sont nées il y a longtemps, la plus anciennes datant de l’Egypte antique elles sont ensuite peu évolué pendant longtemps en restant basique peu esthétiques et à l’origine de nombreuses maladies et infections.</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- 2eme paragraphe -->
+            <div class="row" data-aos="fade-in">
+
+                <!-- Article col 6 -->
+
+                <article class="col-md-7 col-12 hvr-underline-from-left hvr-forward bordureLeft">
+                    <div class="row justify-content-center">
+                        <h2>Comment ça marche ?</h2>
+                    </div>
+                    <div class="row">
+                        <p>Les prothèses actuelles sont dotées de plusieurs propriétées, lorque qu'une personne est amputé au dessus du genou par exemple, il faut remplacer l'articulation mais également tout le travail qui est effectué par les muscles pour contrôler la jambe. Pour permettre à ces genoux , d'assurer leur rôle il faut les personnaliser et c'est du sur mesure, une fois aligné dans la position du corps il faut régler la dureté du piston en fonction du poids et de la taille du patient</p>
+                    </div>
+                </article>
+
+                <!-- Image col 6 -->
+
+                <div class="d-none d-md-flex col-5 justify-content-center">
+                    <img src="images/pro2.png" height="250" width="250" alt="image prothèse 2" title="image prothèse 2" />
+                </div>
+
+
+            </div>
+
+
+            <!-- 3eme paragraphe -->
+            <div class="row" data-aos="fade-down">
+
+                <!-- image col-5 -->
+
+                <div class="d-none d-md-flex col-5 justify-content-center">
+                    <img src="images/pro3.png" height="202" width="250" alt="image prothèse 3" title="image prothèse 3" />
+                </div>
+
+                <!-- Article col-7 -->
+
+                <article class="col-md-7 col-12 hvr-underline-from-right hvr-backward bordureRight">
+                    <div class="row justify-content-center">
+                        <h2>Quelles limites ?</h2>
+                    </div>
+                    <div class="row">
+                        <p>Mais ces prothèses pourtant très pouplaires ont des limites, tout d'abord elles ne possèdent pas de feed-back sensoriel, c'est à dire qu'elles n'intéragissent pas avec le cerveau, donc pas de sensation de toucher par exemple. Et c'est de là que découle les douleurs fantômes : comme le cerveau ne reçoît aucune information, il prend ça comme une anomalie et vous envoie un message qui se traduit par une douleur dans la zone fantôme.<br />De plus il y a un rejet de prothèse car notre système immunitaire, pour nous protéger, empêche toutes sortes de parasites de pouvoir intéragir avec nos hormones ou notre système nerveux...</p>
+                    </div>
+                </article>
+
+            </div>
+            <!-- 4eme -->
+            <div class="row">
+
+                <!-- Titre + article-->
+                <div class="col">
+
+                    <!-- Titre -->
+                    <div class="row justify-content-center" data-aos="fade-left">
+                        <h2>Quelques exemples concrets !</h2>
+                    </div>
+                    <div class="row justify-content-center" data-aos="fade-left">
+                        <p>Découvrez quelques articles ci-dessous</p>
+                    </div>
+
+                    <!-- Articles -->
+                    <div class="row justify-content-around">
+
+                        <div data-aos="fade-up">
+                            <div class="card" style="width: 20rem;">
+                                <img class="card-img-top" src="images/pompier.jpg" alt="article pompier" title="article pompier">
+                                <div class="card-body">
+                                    <h5 class="card-title">Histoire d'un pompier ayant perdu un bras</h5>
+                                    <p class="card-text">Découvrez l'histoire d'un canadien, Rob Anderson qui a perdu un bras ainsi qu'une jambe dans un terrible accident...</p>
+                                    <a href="Pompier.html" class=" bttn-unite d-flex justify-content-center btn-secondary">Voir article</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-up" data-aos-delay="50">
+                            <div class="card justify-content-between" style="width: 20rem;">
+                                <img class="card-img-top" src="images/noelle.jpeg" height="210" width="105" alt="image article noelle" title="image article noelle">
+                                <div class="card-body">
+                                    <h5 class="card-title">Une prothèse d'épaule qui a changé sa vie</h5>
+                                    <p class="card-text">Après moult souffrances, Noëlle s'est faite opérer de l'épaule. Elle raconte l'après et le bonheur de retrouver une vie normale...</p>
+                                    <a href="Noelle.html" class="bttn-unite d-flex justify-content-center btn-secondary">Voir article</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Titre + lien vers autre page -->
+                <div class="col">
+
+                    <!-- Titre -->
+                    <div class="row  justify-content-center" data-aos="fade-right">
+                        <h2>Les prothèses du futur, c'est par là !</h2>
+                    </div>
+                    <div class="row justify-content-center" data-aos="fade-right">
+                        <p>Découvrez ici le fonctionnement des prothèses dites "bioniques"</p>
+                    </div>
+                    <!-- Articles -->
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <div class="row justify-content-center">
+                            <div class="card" style="width: 20rem;">
+                                <img class="card-img-top" src="images/protact.jpg" alt="image prrotact" title="image protact">
+                                <div class="card-body">
+                                    <h5 class="card-title">Les prothèses "bioniques"</h5>
+                                    <p class="card-text">Venez découvrir notre autre page sur les prothèses "bioniques", elle explique leur fonctionnement ainsi que le feed-back sensoriel</p>
+                                    <a href="nouvelle-pro.html" class=" bttn-unite d-flex justify-content-center btn-secondary">Voir article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- Fin 4eme pâragraphe -->
+
+        </div>
+
+        <!-- Bouton pour revenir en haut de la page -->
+
+        <button onclick="topFunction()" id="scrollbackbtn" title="Revenir en haut de la page">
+            <img width="50" height="63" src="images/logopointe.png" alt="Retour en haut de la page" title="logo pointant vers le haut de la page">
+        </button>
+        <script src="scrolltop.js"></script>
+
+    </main>
+
+    <footer>
+        <div class="row justify-content-center align-items-center">
+
+            <!-- Partie de gauche -->
+
+            <div class="col-6">
+                <div class="row justify-content-around">
+                    <a href="contact.html">
+                        <img class="lienimg" src="images/contact.png" width="50" height="50" alt="contact" title="contact">
+                        <p>Contactez-nous</p>
+                    </a>
+                    <a href="contact.html">
+                        <img class="lienimg" src="images/question.png" width="50" height="50" alt="FAQ" title="FAQ">
+                        <p>F.A.Q</p>
+                    </a>
+                </div>
+                <br />
+                <a href="mentionslegales.html">
+                    <p>IUT Lannion 2019-2020 - Mentions légales</p>
+                </a>
+            </div>
+
+            <!-- Partie de droite -->
+
+            <div class="col-6">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Abonnez-vous à notre newsletter" aria-label="champ newsletter">
+                    <div class="input-group-append">
+                        <a href="#" class="bttn-unite">S'abonner</a>
+                    </div>
+                </div>
+                <div class="row justify-content-around">
+                    <a href="#" class="img" id="facebook"><img class="rotation" src="images/facebook.png" width="100" height="100" alt="notre facebook" title="notre facebook"></a>
+                    <a href="#" class="img" id="twitter"><img class="rotation" src="images/twitter.png" width="100" height="100" alt="notre twitter" title="notre twitter"></a>
+                    <a href="#" class="img" id="instagram"><img class="rotation" src="images/instagram.png" width="100" height="100" alt="notre instagram" title="notre instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Pour les animations d'apparition à l'écran-->
+
+    <script src="aos/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+
+</body>
+
+</html>

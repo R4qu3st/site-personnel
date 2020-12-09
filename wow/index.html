@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <!-- Elément meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Je suis Ewen Raoult, j'ai 18 ans et je suis étudiant en DUT Informatique" />
+    <meta name="keywords" content="ewen,raoult,cv,portofolio,informatique,dut,iut,lannion" lang="fr" />
+    <meta name="author" content="Ewen Raoult" />
+
+    <!-- Déclaration de Bootstrap / jQuery / JavaScript -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="main.js"></script>
+
+    <!-- Utilisation de tout l'espace disponible pour les mobiles, sans zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+    <!-- Reste-->
+    <title>MoonPath - Accueil</title>
+    <link rel="icon" href="images/logo%20moon%20tourism.png" />
+
+</head>
+
+<body>
+
+
+    <header>
+        <div class="row align-items-center justify-content-center headermid">
+            <div>
+                
+                <img src="images/logo%20moon%20tourism.png" width="200" id="logoheader">
+                <div class="titleheader">
+                    <span>Moon</span>
+                    <span>Path</span>
+                </div>
+                <div class="stheader">
+                    <span>Heading for cloud nine</span>
+                </div>
+            </div>
+        </div>
+        <img src="images/headermoon.png" id="headermoon">
+        <!--        <div id="footheader">
+            <img src="images/hotel.png" id="hotelheader">
+            <img src="images/lune.png" id="luneheader">
+        </div>-->
+
+        <video autoplay loop muted id="video-background">
+            <source src="images/bg.mp4" type="video/mp4">
+        </video>
+    </header>
+
+
+    <main>
+
+        <nav class="d-none navbar-expand d-md-flex justify-content-start" id="grandenav">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item"><a class="img nav-link" href="#"><img src="images/logo%20moon%20tourism.png" alt="logo" title="logo" width="50" height="50">
+                    </a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Home
+                    </a></li>
+                <li class="nav-item"><a class="nav-link" href="#trips">Trips</a></li>
+                <li class="nav-item"><a class="nav-link" href="#conditions">Flights
+                    </a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Hotels
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="lunatic.html">The Lunatic Hotel
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#curiosities">Curiosities</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact
+                    </a></li>
+            </ul>
+        </nav>
+
+
+
+        <nav class="d-md-none">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="50">
+                    <path class="line top" d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+                    <path class="line middle" d="m 70,50 h -40" />
+                    <path class="line bottom" d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+                </svg>
+                <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#trips">Road Trips</a></li>
+                    <li><a href="#conditions">Flights</a></li>
+                    <li><a href="lunatic.html">The Lunatic Hotel</a></li>
+                    <li><a href="#curiosities">Curiosities</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+        <div class="content">
+
+
+
+            <section id="trips">
+                <h2 class="text-center text-md-left">Road trips</h2>
+                <div class="row justify-content-center" id="roadtrips">
+                    <div class="col-12 col-md-3" data-toggle="modal" data-target="#trip1">
+                        <div class="row justify-content-center align-items-center">
+                            <h3 class="text-center">The Dark Side Of The Moon</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3" data-toggle="modal" data-target="#trip2">
+                        <div class="row justify-content-center align-items-center">
+                            <h3>Culture</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3" data-toggle="modal" data-target="#trip3">
+                        <div class="row justify-content-center align-items-center">
+                            <h3>Chillout</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="conditions">
+                <article>
+                    <h2 class="text-center text-md-left">Flight conditions</h2>
+                    <div class="row">
+                        <div class="col-12 col-md-6 row align-items-center text-center text-md-left">
+                            <p>
+                                Flights are organized all over the world, <span class="value2">shuttles</span> are available to go to the take-off site.<br /><br />
+                                On the first day there is an initiation including <span class="value2">flight tests</span>, but also a <span class="value2">fun part</span> that will please everyone.<br /><br />
+                                At the end of the day the take-off takes place, with everything you desire on board, <span class="value2">refreshments, food, personal services with one steward per person.</span><br /><br />
+                                The different trips offer different itineraries, the proposed route is already an experience out of the ordinary as you will discover <span class="value2">the asteroid sea</span>, stops will also be proposed if necessary to set off to <span class="value2">space taverns.</span><br /><br />
+                                The last part of the trip is the arrival at the site, <span class="value2">the moon.</span> Once you land, shuttles will allow you to reach your hotels in all tranquility. This whole trip is carried out by <span class="value2">MoonPath</span>, your lunar travel agency.
+                            </p>
+                        </div>
+                        <div class="d-none d-md-flex col-md-6 justify-content-center align-items-center">
+                            <div>
+                                <img src="images/trip%20condition.png" alt="MoonPath rocket" title="MoonPath rocket" id="triprocket">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+
+            <section id="hotels">
+                <h2 class="text-center text-md-left">Best-rated hotel</h2>
+                <article class="row">
+                    <div class="col-12 col-md-6">
+                        <img src="images/lunatic%20hotel.jpg" class="w-100" alt="The Lunatic Hotel" title="The Lunatic Hotel">
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column text-center">
+                        <h3>The Lunatic Hotel</h3>
+                        <div><img src="images/5stars.png" height="40" alt="rating : 5 suns" title="rating : 5 suns"></div>
+                        <p>Located at the level of the <span class="value2">Plato crater</span>, you will have a unique view on <span class="value2">the asteroid sea</span>.<br />
+                            The hotel is close to many tourist sites such as the famous <span class="value2">Neil Armstrong's footprint</span>.<br />
+                            With its numerous animations and its club <span class="value2">The Little Aliens</span>, it will satisfy children and parents.</p>
+                        <span>Price : 959$ per person</span>
+                        <div>
+                            <a href="lunatic.html">Learn more</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+
+            <section id="curiosities">
+
+
+                <h2 class="text-center text-md-left">Curiosities</h2>
+
+
+                <article class="row align-items-center justify-content-center">
+                    <div class="col-12 col-md-6 text-center text-md-left order-2 order-md-1">
+                        <h3>Lunar Rover 2000</h3>
+                        <span class="slogan">The off-road king</span>
+                        <p>Thanks to our new off-road vehicle, the <span class="value2">Moon Rover 2000</span>, our most adventurous tourists can set off to discover the most hostile territories of <span class="value2">Earth 1</span> with our supervisory teams, <span class="value2">the Discoverers</span>.<br />
+                            The <span class="value2">Moon Rover 2000</span> is a vehicle with a <span class="value2">power of 300-hp</span> and an <span class="value2">outstanding agility</span>, moreover with their <span class="value2">new gravitation engine</span> you will be able to have fun freely on the lunar regolith or in the air up to <span class="value2">4 meters</span>, all combining extreme sensation and safety.</p>
+                    </div>
+                    <div class="col-12 col-md-6 row justify-content-center order-1 order-md-2">
+                        <img src="images/lunar%20rover.jpg" alt="lunar rover" title="lunar rover" class="w-75">
+                    </div>
+                </article>
+
+
+                <article class="row align-items-center justify-content-center">
+                    <div class="col-12 col-md-6 order-2 text-center text-md-left order-2">
+                        <h3>Neil Armstrong's Footprint</h3>
+                        <span class="slogan">In the footsteps of the man</span>
+                        <p>Discover <span class="value2">Neil Armstrong's mythical footprint</span> and the <span class="value2">American flag</span>, which are found in <span class="value2">the sea of tranquility</span>.<br />With its <span class="value2">famous museum</span> close to the site you can continue your historical experience, this one will please <span class="value2">both young and old</span>. Indeed, this one mixes basic and precise knowledge and this in a very playful way.</p>
+                    </div>
+                    <div class=" order-1 col-6 row justify-content-center">
+                        <img src="images/footprint.jpg" alt="footprint" title="footprint" class="w-75">
+                    </div>
+                </article>
+
+
+                <article class="row align-items-center justify-content-center">
+                    <div class="col-12 col-md-6 text-center text-md-left order-2 order-md-1">
+                        <h3>Dominos Mall</h3>
+                        <span class="slogan">We are wherever you are</span>
+                        <p>The shopping center <span class="value2">Dominos</span> is the largest shopping center on the moon, with <span class="value2">100 shops, 2 amusement parks</span> and the <span class="value2">largest bubble pool in the universe</span>.<br />It will delight everyone, buyers but also people who come to discover the center thanks to its many activities of all kinds.</p>
+                    </div>
+                    <div class="col-12 col-md-6 row justify-content-center order-1 order-md-2">
+                        <img src="images/dominos.jpg" class="w-75">
+                    </div>
+                </article>
+
+
+            </section>
+
+
+        </div>
+
+
+        <div id="contact" class="footer row justify-content-center">
+
+
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start ">
+                <span class="value">MADE BY</span>
+                <span class="creators text-center">Ewen &amp; Antoine</span>
+                <span class="copyright">&copy; 2020</span>
+            </div>
+
+
+            <div class="row justify-content-center justify-content-md-around col-12 col-md-6">
+
+                <div class="person value d-flex flex-column align-items-center align-items-md-start">
+                    <span class="titlesn">EWEN</span>
+                    <div class="text-center">
+                        <a href="https://ewenraoult.com">PERSONAL WEBSITE</a>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/ewen-raoult-546308172/">LINKEDIN</a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/ewenrao">TWITTER</a>
+                    </div>
+                </div>
+
+
+                <div class="person value d-flex flex-column align-items-center align-items-md-start">
+                    <span class="titlesn">ANTOINE</span>
+                    <div class="text-center">
+                        <a href="https://ewenraoult.com">PERSONAL WEBSITE</a></div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/ewen-raoult-546308172/">LINKEDIN</a></div>
+                    <div>
+                        <a href="https://twitter.com/ewenrao">TWITTER</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="scrolltop">
+            <a href="#">
+                <img src="images/fire.png">
+                <img src="images/r2fuse.png">
+                <img src="images/fire%20no%20fuse.png">
+            </a>
+        </div>
+    </main>
+
+
+
+    <div id="trip1" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+
+                    <h4 class="modal-title">The Dark Side Of The Moon</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Explore the unknown wonders of the moon. If you are a fan of surprises of all kinds, this trip is for you !</p>
+                    <span class="value2 white">
+                        All the things you will discover are kept secret</span>
+                </div>
+                <!--                <div class="row justify-content-center">
+                    <div>
+                        <a class="bouton">Learn more</a>
+                    </div>
+                </div>-->
+                <div class="modal-footer">
+                    <a class="bouton" data-dismiss="modal"><span>Close</span></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="trip2" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+
+                    <h4 class="modal-title">Culture</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Many places will allow you to <span class="value2 white">enrich your culture</span>, whether you are <span class="value2 white">young or old</span>, while mixing <span class="value2 white">fun activities</span> and <span class="value2 white">historical information</span>.</p>
+                    <ul>What you will experience :
+                        <li class="value2 white">Historic places</li>
+                        <li class="value2 white">Lunear Museum</li>
+                        <li class="value2 white">Lunear expedition equipment</li>
+                    </ul>
+                    <!--                    <div class="row justify-content-center">
+                        <div>
+                            <a class="bouton">Learn more</a>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="modal-footer">
+                    <a class="bouton" data-dismiss="modal"><span>Close</span></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="trip3" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+
+                    <h4 class="modal-title">Chillout</h4>
+                </div>
+                <div class="modal-body">
+                    <p>The moon is not only an incredible place full of activities, it is also a <span class="value2 white">desert</span> and <span class="value2 white">wild place</span> that will give a certain <span class="value2 white">tranquility</span> to anyone who wants to <span class="value2 white">recharge their batteries</span> or to <span class="value2 white">stay calm and zen</span>.</p>
+                    <ul>What you will experience :
+                        <li class="value2 white">Deckchair with drink at will</li>
+                        <li class="value2 white">The desert plain</li>
+                        <li class="value2 white">A service at your service</li>
+                    </ul>
+                    <!--                    <div class="row justify-content-center">
+                        <div>
+                            <a class="bouton">Learn more</a>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="modal-footer">
+                    <a class="bouton" data-dismiss="modal"><span>Close</span></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <!-- Elément meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Ici, vous pourrez trouver toutes les informations sur les prothèses actuelles ainsi que les nouvelles prothèses ou prothèses du futur." />
+    <meta name="keywords" content="prothesia, prothèse, bionique, futur, science, web, feedback sensoriel" lang="fr" />
+    <meta name="author" content="Ewen Raoult, Florian Bertholino, Fagnet Hugo, Maurais Antoine" />
+
+    <!-- Déclaration de Bootstrap / jQuery / JavaScript -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <script src="bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Lien de la feuille css pour les animations d'apparition à l'écran -->
+    <link href="aos/aos.css" rel="stylesheet">
+
+    <!-- Utilisation de tout l'espace disponible pour les mobiles, sans zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+    <!-- Reste-->
+    <title>Prothesia - Feedback Sensoriel</title>
+    <link rel="icon" href="favicon.ico" />
+
+</head>
+
+<body>
+
+    <!-- Navigation grand écran -->
+
+    <nav class="d-none navbar-expand d-md-flex justify-content-around" id="grandenav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html"><img class="navimg lienimg" src="images/home.png" width="50" height="50" alt="Home" title="Home"><br />
+                    <p class="nav-p">Accueil</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link" href="histoire.html"><img class="navimg lienimg" src="images/travel.png" width="50" height="50" alt="Carte" title="Carte"><br />
+                    <p class="nav-p">Histoire</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html"><img class="navimg lienimg" src="images/logo.png" width="100" height="100" alt="Logo" title="Logo">
+                </a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <img class="navimg lienimg" src="images/e-derma.png" width="50" height="50" alt="Prothèses" title="Prothèses"><br />
+                    <p class="nav-p">Prothèses</p>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="pro-actuelle.html">
+                        <p class="nav-p">Prothèses actuelles</p>
+                    </a>
+                    <a class="dropdown-item" href="nouvelle-pro.html">
+                        <p class="nav-p">Nouvelles prothèses</p>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"><img class="navimg lienimg" src="images/contact.png" width="50" height="50" alt="Contact" title="Contact"><br />
+                    <p class="nav-p">Contact</p>
+                </a></li>
+        </ul>
+    </nav>
+
+    <!-- Navigation petit écran -->
+
+    <nav class="d-md-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="50">
+                <path class="line top" d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+                <path class="line middle" d="m 70,50 h -40" />
+                <path class="line bottom" d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+            </svg>
+            <ul id="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="pro-actuelle.html">Prothèses actuelles</a></li>
+                <li><a href="nouvelle-pro.html">Nouvelles prothèses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- Titre et phrase d'intro -->
+
+        <div class="row justify-content-center align-items-center" data-aos="flip-up" data-aos-duration="1000">
+            <h1 class="col-10 titre degrade">Le retour sensoriel ou "feed-back" : un afflux nerveux qui permet l'existence d'un sens.</h1>
+        </div>
+        <div class="row justify-content-center align-items-center" data-aos="fade-up">
+            <p class="col-9 hvr-reveal-black text-center lead">Comme l’oeil renvoie les informations qu’il a capté par le nerf optique, nos membres, comme toutes les parties de notre corps, renvoient sans cesse des informations à notre cerveau. Par exemple, les capteurs situés sur la peau envoient au cerveau les informations nécessaires pour savoir si notre peau est en contact avec quelque chose, nous permettent de ressentir la température…</p>
+        </div>
+
+        <!-- Texte + schéma de droite -->
+
+        <div class="row justify-content-center">
+            <div class="row justify-content-center align-items-center">
+                <p class="col-6 hvr-underline-from-left-black bordureLeftBlack hvr-forward" data-aos="fade-up-left">Mais le feed-back sensoriel est un “retour”, ce qui veut dire que <span class="important">c’est en réponse à une instruction du cerveau</span> que l’information est envoyée. Pour la kinesthésie, quand on bouge un membre dans l’espace, c’est notre cerveau qui envoie, grâce aux nerfs, l’ordre de bouger de telle ou telle façon. Ensuite, le membre, pour confirmer au cerveau qu’il a bien bougé, lui renvoit un signal pour lui dire qu’il a bien bougé de la bonne façon, ou qu’il a été contraint de faire un autre mouvement, ce qui permet au cerveau de pouvoir situer exactement chaque partie de notre corps.</p>
+                <div class="row flex-column col-6" data-aos="fade-up-right">
+                    <div class="row align-items-center justify-content-center flex-nowrap">
+                        <img src="images/cerveau.png" width="150" height="150" alt="cerveau" title="cerveau">
+                        <object class="fleches" data="images/flechesok.svg" type="image/svg+xml">
+                            <img src="images/logo.png" alt="logo" title="logo" />
+                        </object>
+                        <img src="images/bras.png" width="150" height="150" alt="bras" title="bras">
+                    </div>
+                    <div class="row align-items-center justify-content-center flex-nowrap">
+                        <img src="images/cerveau.png" width="150" height="150" alt="cerveau" title="cerveau">
+                        <object class="fleches" data="images/flechespasok.svg" type="image/svg+xml">
+                            <img src="images/logo.png" alt="logo" title="logo" />
+                        </object>
+                        <img src="images/logonoir.png" width="150" height="150" alt="logo noir" title="logo noir">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Schéma gauche + texte -->
+
+        <div class="row justify-content-around align-items-center">
+            <div class="row col-6 order-md-1 order-2 justify-content-center" data-aos="fade-down-left">
+                <img src="images/shemaKine.png" alt="schema sur la kinhestésie" title="schema de la kinhestésie" class="img" width="421" height="390">
+            </div>
+            <div class="col-6 row order-1 order-md-2" data-aos="fade-down-right">
+
+                <p class="hvr-underline-from-left-black bordureLeftBlack hvr-forward">Par exemple, quand on veut lever un bras, <span class="important">le cerveau envoie d'abord au bras</span> l’ordre de se lever, ensuite <span class="important">le bras effectue son mouvement</span> (se lève), et enfin <span class="important">renvoie au cerveau</span> l’information disant qu’il s’est bien levé, ou qu’il a été contraint par un obstacle ou quelque chose. Donc, avec les informations que le cerveau vient de recevoir, <span class="important">il nous fait ressentir que notre bras est levé</span>, et nous savons donc où il se situe sans avoir à le regarder.</p>
+
+                <p class="hvr-underline-from-left-black bordureLeftBlack hvr-forward">C’est un mécanisme qui agit <span class="important">constamment</span>, et s’il nous arrivait de perdre ce feed-back sensoriel, nous aurions bien plus de mal à faire quoi que ce soit, comme simplement marcher, nous devrions être très concentré en regardant nos jambes. <span class="important">Même écrire deviendrait un calvaire</span>, que ce soit avec un crayon ou un clavier.</p>
+            </div>
+        </div>
+
+        <!-- Phrase de fin de main -->
+
+        <div class="row justify-content-center align-items-center" data-aos="zoom-in">
+            <p class="col-9 hvr-reveal-black">Par ailleurs, certaines personnes ont une mémoire visuelle, ou auditive, mais vous savez certainement que certaines personnes doivent écrire et réécrire les choses pour s’en souvenir, c’est <span class="important">la mémoire kinesthésique</span>, faire devenir automatique des gestes. C’est ce que les musiciens font chaque jours, et ce que les sportifs pratiquent à chaque entraînement, que ce soit un joueur de tennis qui s'entraîne au revers ou un joueur de football qui s'entraîne à tirer des coup-francs.</p>
+        </div>
+
+
+        <!-- Bouton pour revenir en haut de la page -->
+
+        <button onclick="topFunction()" id="scrollbackbtn" title="Revenir en haut de la page">
+            <img width="50" height="63" src="images/logopointe.png" alt="Retour en haut de la page" title="logo pointant vers le haut de la page">
+        </button>
+        <script src="scrolltop.js"></script>
+
+    </main>
+
+    <footer>
+        <div class="row justify-content-center align-items-center">
+
+            <!-- Partie de gauche -->
+
+            <div class="col-6">
+                <div class="row justify-content-around">
+                    <a href="contact.html">
+                        <img class="lienimg" src="images/contact.png" width="50" height="50" alt="contact" title="contact">
+                        <p>Contactez-nous</p>
+                    </a>
+                    <a href="contact.html">
+                        <img class="lienimg" src="images/question.png" width="50" height="50" alt="FAQ" title="FAQ">
+                        <p>F.A.Q</p>
+                    </a>
+                </div>
+                <br />
+                <a href="mentionslegales.html">
+                    <p>IUT Lannion 2019-2020 - Mentions légales</p>
+                </a>
+            </div>
+
+            <!-- Partie de droite -->
+
+            <div class="col-6">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Abonnez-vous à notre newsletter" aria-label="champ newsletter">
+                    <div class="input-group-append">
+                        <a href="#" class="bttn-unite">S'abonner</a>
+                    </div>
+                </div>
+                <div class="row justify-content-around">
+                    <a href="#" class="img" id="facebook"><img class="rotation" src="images/facebook.png" width="100" height="100" alt="notre facebook" title="notre facebook"></a>
+                    <a href="#" class="img" id="twitter"><img class="rotation" src="images/twitter.png" width="100" height="100" alt="notre twitter" title="notre twitter"></a>
+                    <a href="#" class="img" id="instagram"><img class="rotation" src="images/instagram.png" width="100" height="100" alt="notre instagram" title="notre instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Pour les animations d'apparition à l'écran-->
+
+    <script src="aos/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+
+</body>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <!-- Elément meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Ici, vous pourrez trouver toutes les informations sur les prothèses actuelles ainsi que les nouvelles prothèses ou prothèses du futur." />
+    <meta name="keywords" content="prothesia, prothèse, bionique, futur, science, web, feedback sensoriel" lang="fr" />
+    <meta name="author" content="Ewen Raoult, Florian Bertholino, Fagnet Hugo, Maurais Antoine" />
+
+    <!-- Déclaration de Bootstrap / jQuery / JavaScript -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <script src="bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <link href="aos/aos.css" rel="stylesheet">
+
+    <!-- Utilisation de tout l'espace disponible pour les mobiles, sans zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+    <!-- Reste-->
+    <title>Prothesia - Contact</title>
+    <link rel="icon" href="favicon.ico" />
+</head>
+
+<body>
+
+    <!-- Navigation grand écran -->
+
+    <nav class="d-none navbar-expand d-md-flex justify-content-around" id="grandenav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html"><img class="navimg lienimg" src="images/home.png" width="50" height="50" alt="Home" title="Home"><br />
+                    <p class="nav-p">Accueil</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link" href="histoire.html"><img class="navimg lienimg" src="images/travel.png" width="50" height="50" alt="Carte" title="Carte"><br />
+                    <p class="nav-p">Histoire</p>
+                </a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html"><img class="navimg lienimg" src="images/logo.png" width="100" height="100" alt="Logo" title="Logo">
+                </a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <img class="navimg lienimg" src="images/e-derma.png" width="50" height="50" alt="Prothèses" title="Prothèses"><br />
+                    <p class="nav-p">Prothèses</p>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="pro-actuelle.html">
+                        <p class="nav-p">Prothèses actuelles</p>
+                    </a>
+                    <a class="dropdown-item" href="nouvelle-pro.html">
+                        <p class="nav-p">Nouvelles prothèses</p>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#"><img class="navimg lienimg" src="images/contact.png" width="50" height="50" alt="Contact" title="Contact"><br />
+                    <p class="nav-p">Contact</p>
+                </a></li>
+        </ul>
+    </nav>
+
+    <!-- Navigation petit écran -->
+
+    <nav class="d-md-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="50">
+                <path class="line top" d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+                <path class="line middle" d="m 70,50 h -40" />
+                <path class="line bottom" d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+            </svg>
+            <ul id="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="pro-actuelle.html">Prothèses actuelles</a></li>
+                <li><a href="nouvelle-pro.html">Nouvelles prothèses</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <!--Titre Partie 1-->
+
+        <div class="row justify-content-center" data-aos="fade-right">
+            <h1>Les Dragons de Shanghaï &#128009;</h1>
+        </div>
+
+        <!--Partie 1 : Nos fiches-->
+
+        <div class="row justify-content-center">
+
+            <!--Carte Ewen-->
+
+            <div class="col-3" data-aos="fade-up">
+
+                <table class="rounded table table-dark table-hover">
+                    <thead class="d-flex justify-content-center">
+                        <tr>
+                            <th>Ewen Raoult</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="d-flex justify-content-center">
+                                <img src="images/PhotoEwen.jpg" alt="Ewen" width="240" height="240" class="rounded-circle">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="d-flex justify-content-center">
+                                <a href="mailto:ewen.raoult@etudiant.univ-rennes1.fr">
+                                    <p class="maillien align-self-center"><span class="badge badge-secondary">ewen.raoult@etudiant.univ-rennes1.fr</span></p>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="d-flex justify-content-center">
+                                <p>Etudiant à l' <span class="badge badge-light">IUT de Lannion</span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <!--Carte Florian-->
+
+            <div class="col-3" data-aos="fade-down">
+                <table class="rounded table table-dark table-hover">
+                    <thead class="d-flex justify-content-center">
+                        <tr>
+                            <th>Florian Bertholino</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="d-flex justify-content-center">
+                            <img src="images/PhotoFlorian.jpg" alt="Florian" class="rounded-circle">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex justify-content-center">
+                            <a href="mailto:florian.bertholino@etudiant.univ-rennes1.fr">
+                                <p class="maillien align-self-center"><span class="badge badge-secondary">florian.bertholino@etudiant.univ-rennes1.fr</span></p>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex justify-content-center">
+                            <p>Etudiant à l' <span class="badge badge-light">IUT de Lannion</span></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <!--Carte Hugo-->
+
+            <div class="col-3" data-aos="fade-up">
+
+                <table class="rounded table table-dark table-hover">
+                    <thead class="d-flex justify-content-center">
+                        <tr>
+                            <th>Hugo Fagnet</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="d-flex justify-content-center">
+                            <img src="images/PhotoHugo.jpg" alt="Hugo" class="rounded-circle">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex justify-content-center">
+                            <a href="mailto:hugo.fagnet@etudiant.univ-rennes1.fr">
+                                <p class="maillien align-self-center"><span class="badge badge-secondary">hugo.fagnet@etudiant.univ-rennes1.fr</span></p>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex justify-content-center">
+                            <p>Etudiant à l' <span class="badge badge-light">IUT de Lannion</span></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <!--Carte Antoine-->
+
+            <div class="col-3" data-aos="fade-down">
+                <table class="rounded table table-dark table-hover">
+                    <thead class="d-flex justify-content-center">
+                        <tr>
+                            <th>Antoine Maurais</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="d-flex justify-content-center">
+                            <img src="images/PhotoAntoine.jpg" alt="Antoine" class="rounded-circle">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex justify-content-center">
+                            <a href="mailto:antoine.maurais@etudiant.univ-rennes1.fr">
+                                <p class="maillien align-self-center"><span class="badge badge-secondary">antoine.maurais@etudiant.univ-rennes1.fr</span></p>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex justify-content-center">
+                            <p>Etudiant à l' <span class="badge badge-light">IUT de Lannion</span></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!--Titre Partie 2-->
+
+        <div class="row d-flex justify-content-around" data-aos="fade-right">
+            <h1>Foire aux questions</h1>
+        </div>
+
+        <!--Partie 2 : FAQ-->
+
+        <div class="row justify-content-center">
+
+            <!--Partie 2 : FAQ-->
+
+            <!-- Partie de gauche -->
+
+            <div class="col-6" data-aos="zoom-in-right">
+
+                <!-- 1er tableau -->
+
+                <table class="rounded table table-striped table-dark table-hover">
+                    <thead class="d-flex justify-content-center thead-dark">
+                        <tr>
+                            <th class="titreH3">Pourquoi ce site ?</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="d-flex">
+                            <p>
+                                Nous avons réalisé ce site dans le cadre d’un projet de PPP (Projet Personnel et Professionnel), pour l’IUT de Lannion.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- 2eme tableau -->
+
+                <table class="rounded table table-striped table-dark table-hover">
+                    <thead class="d-flex justify-content-center thead-dark">
+                        <tr>
+                            <th class="titreH3">Pourquoi choisir le sujet des prothèses ?</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="d-flex">
+                            <p>
+                                Le thème du site devait porter sur « l’informatique et la santé », nous avons donc essayé de regarder tout les aspects de ce thème. Nous étions d’accords que les prothèses étaient un sujet intéressant, d’abord parce que c’est un sujet tourné vers l’avenir, mais aussi parce que nous avons constaté qu’il y a peu, si ce n’est pas de tout, de sites proposant, comme le notre, une synthèse générale sur l’histoire des prothèses, avec leurs fonctionnements et sur les sens et phénomènes de notre corps qui sont en jeu.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Partie de droite -->
+
+            <div class="col-6" data-aos="zoom-in-left">
+
+                <!-- 1er tableau -->
+
+                <table class="rounded table table-striped table-dark table-hover">
+                    <thead class="d-flex justify-content-center thead-dark">
+                        <tr>
+                            <th class="titreH3">Quels ont été vos moyens de communication pour réaliser ce site ?</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="d-flex">
+                            <p>
+                                Tout d’abord, pour le choix du thème, puis, pour réaliser la charte graphique, nous communiquions de vive voix. Ensuite, après s’être « réparti les rôles », nous utilisions :<br />
+                                <span class="badge badge-secondary">Les Mails</span> : pour s’envoyer les « morceaux de code » utiles.<br />
+                                <span class="badge badge-secondary">Messenger</span> : Pour débattre sur certains points.<br />
+                                <span class="badge badge-secondary">Discord</span> : Quand, chacuns chez soi, nous devions travailler ensemble directement.<br />
+                                <span class="badge badge-secondary">Google Drive</span> : Pour s’envoyer, que ce soit des fichiers entiers, ou même pour centraliser les textes qui régissent notre site<br />
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- 2eme tableau -->
+
+                <table class="rounded table table-striped table-dark table-hover">
+                    <thead class="d-flex justify-content-center thead-dark">
+                        <tr>
+                            <th class="titreH3">D'où viennent les informations présentes sur ce site ?</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="d-flex-column">
+                            <p>
+                                Voici la liste de nos sources :
+                            </p>
+                            <ul>
+                                <li><strong>Kinésthésie : </strong>Feldenkrais-anthony</li>
+                                <li><strong>Proprioception et neurologie : </strong>Siecledigital</li>
+                                <li><strong>Prohèses normales : </strong>Reflexiontranshumanisme</li>
+                                <li><strong>Prothèses kinésthésiques : </strong>Hinnovic, Paris-singularity</li>
+                                <li><strong>Pompier : </strong>Paris-singularity</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- Bouton pour revenir en haut de la page -->
+
+        <button onclick="topFunction()" id="scrollbackbtn" title="Revenir en haut de la page">
+            <img width="50" height="63" src="images/logopointe.png" alt="Retour en haut de la page" title="logo pointant vers le haut de la page">
+        </button>
+        <script src="scrolltop.js"></script>
+
+    </main>
+
+
+    <footer>
+        <div class="row justify-content-center align-items-center">
+
+            <!-- Partie de gauche -->
+
+            <div class="col-6">
+                <div class="row justify-content-around">
+                    <a href="contact.html">
+                        <img class="lienimg" src="images/contact.png" width="50" height="50" alt="contact" title="contact">
+                        <p>Contactez-nous</p>
+                    </a>
+                    <a href="contact.html">
+                        <img class="lienimg" src="images/question.png" width="50" height="50" alt="FAQ" title="FAQ">
+                        <p>F.A.Q</p>
+                    </a>
+                </div>
+                <br />
+                <a href="mentionslegales.html">
+                    <p>IUT Lannion 2019-2020 - Mentions légales</p>
+                </a>
+            </div>
+
+            <!-- Partie de droite -->
+
+            <div class="col-6">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Abonnez-vous à notre newsletter" aria-label="champ newsletter">
+                    <div class="input-group-append">
+                        <a href="#" class="bttn-unite">S'abonner</a>
+                    </div>
+                </div>
+                <div class="row justify-content-around">
+                    <a href="#" class="img" id="facebook"><img class="rotation" src="images/facebook.png" width="100" height="100" alt="notre facebook" title="notre facebook"></a>
+                    <a href="#" class="img" id="twitter"><img class="rotation" src="images/twitter.png" width="100" height="100" alt="notre twitter" title="notre twitter"></a>
+                    <a href="#" class="img" id="instagram"><img class="rotation" src="images/instagram.png" width="100" height="100" alt="notre instagram" title="notre instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="aos/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+
+</body>
+
+</html>
